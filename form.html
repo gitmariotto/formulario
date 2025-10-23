@@ -1,0 +1,197 @@
+<!--  --><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição para Feira de Profissões 2025</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6fb;
+      margin: 0;
+      padding: 0 15px;
+    }
+
+    .form-section {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #4a90e2;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .submit-btn {
+      background: #4a90e2;
+      color: white;
+    }
+
+    .reset-btn {
+      background: #ddd;
+      color: #333;
+      margin-left: 10px;
+    }
+
+    fieldset {
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #357ABD;
+    }
+
+    /* Tabela */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #4a90e2;
+      color: white;
+    }
+
+    a {
+      color: #357ABD;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="form-section" id="inscricao">
+    <h1>Inscrição para Feira de Profissões 2025</h1>
+    <p style="text-align:center;">Preencha o formulário abaixo para se inscrever em palestras e workshops.</p>
+
+    <!-- Links internos -->
+    <p style="text-align:center; margin-bottom:25px;">
+      <a href="#mensagem">Ir para Mensagem</a> |
+      <a href="#tabela-profissoes">Exemplos de Profissões</a>
+    </p>
+
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(XX)XXXXX-XXXX" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato XXX.XXX.XXX-XX">
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX" required
+          pattern="\d{5}-\d{3}" title="Digite o CEP no formato XXXXX-XXX">
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Complementares</legend>
+
+        <label for="mensagem" id="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <label for="area">Área de interesse:</label>
+        <select id="area" name="area" required>
+          <option value="">Selecione...</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="saude">Saúde</option>
+          <option value="engenharia">Engenharia</option>
+        </select>
+
+        <p style="margin-top:15px;">Turno preferido:</p>
+        <label><input type="radio" name="turno" value="manha" required> Manhã</label>
+        <label style="margin-left:15px;"><input type="radio" name="turno" value="tarde"> Tarde</label>
+        <label style="margin-left:15px;"><input type="radio" name="turno" value="noite"> Noite</label>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+      <button type="reset" class="reset-btn">Limpar</button>
+    </form>
+  </section>
+
+  <!-- Tabela de Profissões -->
+  <section class="form-section" id="tabela-profissoes">
+    <h2>Exemplos de Profissões e Palestras</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Profissão</th>
+          <th>Palestra/Workshop</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Engenheiro de Software</td>
+          <td>Introdução a Desenvolvimento Ágil</td>
+        </tr>
+        <tr>
+          <td>Médico</td>
+          <td>Avanços na Telemedicina</td>
+        </tr>
+        <tr>
+          <td>Designer Gráfico</td>
+          <td>Criação de Interfaces Intuitivas</td>
+        </tr>
+        <tr>
+          <td>Engenheiro Civil</td>
+          <td>Planejamento de Obras Sustentáveis</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
